@@ -19,13 +19,6 @@ class AppNavigationController extends GetxController {
       height: 1.sh,
       width: 1.sw,
       color: AppColors.primaryColor.withOpacity(0.1),
-      child:
-          Center(child: customText("QR Screen", color: AppColors.primaryColor)),
-    ),
-    Container(
-      height: 1.sh,
-      width: 1.sw,
-      color: AppColors.primaryColor.withOpacity(0.1),
       child: Center(
           child:
               customText("Transactions Screen", color: AppColors.primaryColor)),

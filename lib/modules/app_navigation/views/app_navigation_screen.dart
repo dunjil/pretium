@@ -122,27 +122,14 @@ class BottomNavItem extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              index != 1
-                  ? SvgPicture.asset(
-                      activeIcon,
-                      height: iconSize.sp,
-                      color: index == homeController.currentScreenIndex
-                          ? AppColors.primaryColor
-                          : AppColors.blackColor,
-                      width: iconSize.sp,
-                    )
-                  : Container(
-                      padding: EdgeInsets.all(12.sp),
-                      decoration: const BoxDecoration(
-                          color: AppColors.primaryColor,
-                          shape: BoxShape.circle),
-                      child: SvgPicture.asset(
-                        activeIcon,
-                        height: iconSize.sp,
-                        color: AppColors.whiteColor,
-                        width: iconSize.sp,
-                      ),
-                    ),
+              SvgPicture.asset(
+                activeIcon,
+                height: iconSize.sp,
+                color: index == homeController.currentScreenIndex
+                    ? AppColors.primaryColor
+                    : AppColors.blackColor,
+                width: iconSize.sp,
+              ),
               SizedBox(
                 height: 5.sp,
               ),
